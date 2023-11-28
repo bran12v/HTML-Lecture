@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tag Examples</title>
+    </head>
+    <body>
+        <h1>Write some text into my body for fun!</h1>
+        <p>Vineyards are cool!</p>
+        <!-- I wouldn't recommend Tagless html-->
+
+        <!-- 
+            Two types of tags - BLOCK and INLINE 
+
+            BLOCK tags - by default, span the width of the page
+            they sit on their own line
+            and automatically clear themselves
+            They live in their own "boxes"
+
+            INLINE tag - by default, span only what they include
+            They don't clear themselves
+            they still have a "box"
+                Ex: Strong
+        -->
+        I wanna be the <strong>very best.</strong>
+
+        <strong><p>Like</p></strong> <strong>no one</strong> every was.
+
+        Gotta catch them <strong>all</strong> Pokemon.
+
+        <!-- 
+            Non-semantic/Generic tags
+            
+            for block - "div" - a division of the page
+            for inline - "span" - a span of text
+        -->
+
+        <div>Pikachu</div>
+        <p>Raichu</p>
+        <span style="color: purple;">Gengar</span> Jigglepuff
+
+        <!-- 
+            Semantic tags - tags with additional meaning behind them
+
+            Semantic Block tags - behave just like a div but they give the designer
+                and the page itself additional context and meaning
+
+            Ex:
+                main - the main content area of the page
+                section - a general section, containing other elements
+                article - a block of text
+                header - page header
+                footer - page footer
+                nav - navigation bar/area
+                aside - sidebar or something you want highlighted
+
+            Semantic tags CAN have default styling but usually if you are
+                using semantics this would be something you would change.
+
+            p - paragraph
+            h1 - h6 - various heading sizes
+            form 
+            ul/ol - unordered (bullet) and ordered (numbered) lists
+            li - list item
+            table - set of rows and columns for laying out data
+
+            Semantic Inline tags
+                these are for spans of text that you want to have 
+                certain properties
+
+            Ex:
+                strong - bold (<b>)
+                em - italics (<i>)
+                sub/sup - subtext vs supertext
+                a - anchor = hyperlink to another page/resource/section
+                img - image, self closing
+         -->
+         <p>y=mx+b/x<sup>2</sup></p>
+         <p>log<sub>2</sub>x=5</p>
+         <!-- <img src="256px-Pikachu_artwork_for_Pokémon_Red_and_Blue.webp.png" alt="default"> -->
+         <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+         <p><a href="index.html"><img src="256px-Pikachu_artwork_for_Pokémon_Red_and_Blue.webp.png" width="50" height="50"></a></p>
+         <p><a href="quick-markup.html">Quick-markup.html</a></p>
+
+         <!-- 
+            lists
+                ul - unordered
+                ol - ordered
+                li - list item
+         -->
+         <p>Best place in Colorado:</p>
+         <ul>
+            <li>My sister house</li>
+            <li>Grand Junction</li>
+            <li>Glenwood Springs</li>
+            <li>Vail</li>
+            <li>Avon</li>
+         </ul>
+
+         <p>Best food items:</p>
+         <ol>
+            <li>Arepa y carne</li>
+            <li>Pepitos</li>
+            <li>Steak</li>
+            <li>Cheesecake</li>
+            <li>Dark Chocolate</li>
+            <li>Salmon</li>
+         </ol>
+         <br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>

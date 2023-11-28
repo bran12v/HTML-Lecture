@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+</head>
+<body>
+    <!-- Forms can take.... many forms! -->
+    <a href="index.html" target="_blank">New window index.html</a>
+
+    <!-- simple login page, registration page
+    anywhere where a users data is being collected -->
+
+    <!-- 
+        input - text, buttons, checkboxes, color selectors
+
+        Different tags to collect information:
+            - form
+            - select
+            - button
+            - input *****
+
+        Inputs different forms:
+            text
+            date
+            number
+            email
+            color
+            radio button
+            checkboxes
+            file uploads
+        
+        At the end of the input process the user will submit 
+        data using a submit button.
+
+        Only the inputs in that form will be submitted
+     -->
+     
+     <!-- 
+        CRUD actions
+            Create - POST request
+            Read - GET request
+            Update - PUT request
+            Delete - DELETE request
+      -->
+
+     <form action="https://www.google.com" method="GET">
+        <p>GET form - go to google.com</p>
+        <button type="submit">SUBMIT</button>
+     </form>
+
+     <!-- API gateway -->
+     <form action="https://www.w3schools.com/action_page.php" method="POST">
+        <p>POST form - send data somewhere</p>
+
+        <!-- Label tag & Input tag -->
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" 
+            placeholder="Input first name here...">
+        </div>
+            
+        <br>
+
+        <div>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" 
+            placeholder="Input last name here...">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" step="1" min="0" max="150">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="favorite-color">Favorite Color:</label>
+            <input type="color" name="favorite-color" id="favorite-color">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="smart">Are you smart?:</label>
+            <input type="checkbox" name="smart" id="smart" value="yes">
+        </div>
+
+        <br>
+
+        <div>
+            <p>What is your favorite operating system?</p>
+            <label for="mac">Mac:</label>
+            <input type="radio" name="operating-system" id="mac">
+            <label for="windows">Windows:</label>
+            <input type="radio" name="operating-system" id="windows">
+            <label for="linux">Linux:</label>
+            <input type="radio" name="operating-system" id="linux">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="music">Favoirte Genre:</label>
+            <select name="music" id="music">
+                <option value="rock">Rock</option>
+                <option value="Post-Hardcore">Post-Hardcore</option>
+                <option value="Classical">Classical</option>
+                <option value="Pop">Pop</option>
+                <option value="Latin">Latin</option>
+                <option value="videogame-scores">OSTs</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button type="reset">RESET</button>
+
+        <button type="submit">SUBMIT</button>
+
+     </form>
+</body>
+</html>
