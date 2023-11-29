@@ -1,0 +1,79 @@
+/* Universal Selector */
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 24px;
+}
+
+p {
+    margin-bottom: 48px;
+    /* background-color: aqua; */
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content */
+    /* 
+        baseline (default)
+        center - center everything, smashed together
+        space-around - equally divide up the available space between items
+        space-between - same as the above, but also adds space at the beginning and end.
+    */
+    justify-content: space-between;
+    /* margin-bottom: 12px; */
+}
+
+.nav {
+    background-color: lightgray;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 15px;
+}
+
+div {
+    border-radius: 50%;
+    /* width: 33%;
+    height: 33%; */
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blanched-almond {
+    background-color: blanchedalmond;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.orange {
+    background-color: orange;
+}

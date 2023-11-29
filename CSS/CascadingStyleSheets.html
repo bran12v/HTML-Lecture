@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <!-- CSS - Cascading Style Sheets -->
+
+    <!-- 
+        We can put styling information in three different places:
+            - in an individual tag (good for spot styling, quick)
+            - in an individual page (style tag of an entire page)
+            - load an external style sheet into your webpage
+     -->
+     <!-- <style>
+        /* This is a CSS comment */
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        /* The way to refer to multiple tags at once is through commas */
+        p, h1, h2, h3, table {
+          margin-left: 24px;
+          margin-right: 24px;
+        }
+
+        h2, h3 {
+            color: hotpink;
+        }
+
+        h1, a {
+            text-decoration: none;
+        }
+
+        /* Class is a reusable CSS attribute that you can apply to multiple elements */
+        .news {
+            font-size: 12px;
+            font-style: italic;
+            color: cadetblue;
+        }
+
+        /* ID selector, it is a unique styling that gets applied to only a single element */
+        #history {
+            text-decoration: line-through;
+            text-transform: capitalize;
+            font-size: 10px;
+        }
+
+
+        /* Pseudo-selector, apply upon event */
+        a:visited {
+            color: rgb(300, 25, 180);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+
+        header {
+            background-color: lightgray;
+            height: 50px;
+        }
+
+        footer {
+            background-color: lightgray;
+            height: 50px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 12px;
+        }
+
+        .sidebar {
+            width: 210px;
+            background-color: aqua;
+            color: white;
+            float: right;
+            /* margin contains multiple values */
+            /* top right bottom left */
+            margin: 0px 24px 12px 12px;
+        }
+
+        /* apply styling to specific HTML tags within other tags */
+        body main aside h3 {
+            color: black;
+        }
+
+        table {
+            border: solid black 1px;
+            background-color: blanchedalmond;
+            margin: 0px 24px 12px 12px;
+            float: right;
+            border-collapse: collapse;
+        }
+
+        td, tr, th{
+            border: solid black 1px;
+            background-color: blanchedalmond;
+            padding: 15px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        /* tr.gray {
+            color: gray;
+        } */
+
+        /* Applying styling to specific subtags and elements */
+        tbody > tr:nth-child(odd) {
+            color: red;
+        }
+
+        tbody > tr:nth-child(even) {
+            color: gray;
+        }
+
+        ul > li {
+            text-decoration: underline;
+        }
+
+     </style> -->
+     <link rel="stylesheet" href="Cascading.css">
+</head>
+<body>
+    <header>
+        Welcome Brandon
+        <br>
+        <a href="../index.html">Home</a>
+    </header>
+    <main id="container">
+        <!-- styling in an HTML tag, good for spot styling  -->
+        <!-- syntax - <tag style="property-name: property-value;>" -->
+        <!-- multiple properties must have a semicolon in between them -->
+        <h1 style="color: red; background-color: aqua;">The Trainer Hall of Fame</h1>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis facere distinctio ea ducimus aliquid modi accusamus natus assumenda repellendus dolorum nesciunt ipsa quas, quidem enim nemo voluptate obcaecati sunt odio!</p>
+
+        <h3>Facts about Pokemon</h3>
+
+        <ul>
+            <li>Fact 1</li>
+            <li>Fact 2</li>
+            <li>Fact 3</li>
+        </ul>
+
+        <h3>Ash Ketchem news!</h3>
+        <h3>Types of Pokemon</h3>
+        <table>
+            <thead>
+                <th scope="col">Fire</th>
+                <th scope="col">Water</th>
+                <th scope="col">Grass</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Charmander</td>
+                    <td>Squirtle</td>
+                    <td>Bulbasaur</td>
+                </tr>
+                <tr class="gray">
+                    <td>Cyndiquil</td>
+                    <td>Totodile</td>
+                    <td>Chikorita</td>
+                </tr>
+                <tr>
+                    <td>Torchik</td>
+                    <td>Mudkip</td>
+                    <td>Treeko</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Classes can be applied to multiple tags -->
+        <p class="news">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, eos ipsam et in magnam modi voluptatibus autem sunt accusantium harum facilis nam, repellat voluptatum suscipit aut incidunt dolore officia veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam eligendi ipsam id recusandae! Rem, rerum facilis! Dignissimos accusantium, incidunt tenetur doloribus corrupti exercitationem officia qui tempore pariatur cumque sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo eveniet maiores doloribus laudantium, soluta fugit numquam dolorem sint labore dolores dolor sapiente veniam architecto animi molestias velit dicta? Ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, saepe! Cupiditate recusandae nulla tempora, a laborum temporibus? Porro, inventore! Quae aspernatur officiis corrupti quas. Numquam maxime rerum corporis. Animi, odio.</p>
+
+        <h2>The history of Pokemon</h2>
+
+        <aside class="sidebar">
+            <h3>Trainer Rankings</h3>
+            <ol>
+                <li>Trainer 1</li>
+                <li>Trainer 2</li>
+                <li>Trainer 3</li>
+                <li>Trainer 4</li>
+                <li>Trainer 5</li>
+            </ol>
+        </aside>
+        
+        <p>TEAM ROCKET WAS HERE :P!</p>
+        <p id="history">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum aspernatur eligendi. Ratione fuga corporis corrupti, doloremque aliquid unde libero fugit sed esse ab dolorem minus, velit, inventore eveniet iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus rem quaerat dolore reprehenderit commodi, et debitis, beatae molestias pariatur aspernatur asperiores delectus officiis eligendi, ab sit quidem soluta ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cupiditate itaque ratione eligendi voluptatum voluptatem ea incidunt, vero qui, non assumenda tempore alias quia repudiandae placeat fugiat nulla dolore consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptates ipsam perferendis maxime dolores? Beatae repellendus fugit hic autem sunt alias nobis, iste fugiat reprehenderit fuga, quisquam cum laboriosam ipsum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa earum soluta eos, vitae fugiat dicta velit, sapiente eligendi voluptatem itaque labore error repudiandae? Maiores, accusamus harum quos corrupti explicabo id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quis. Incidunt ipsam eaque consectetur modi error sed, deserunt magni quasi. Laborum quaerat consequatur voluptatibus unde repellendus ullam, facilis quo repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore aliquam nemo itaque placeat libero labore vero repudiandae adipisci voluptatem eum debitis magnam eligendi, modi illum est nesciunt laudantium ex.</p>
+
+        <br>
+    </main>
+    <footer>
+        &copy;SkillstormPokeWorks, LLC 2023
+    </footer>
+</body>
+</html>

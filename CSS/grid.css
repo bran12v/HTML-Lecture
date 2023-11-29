@@ -1,0 +1,62 @@
+
+/* this style sets up our overall grid */
+/* display: grid is the starting point */
+.container {
+    display: grid;
+    /* fr - fraction/part of the grid */
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 2fr 1fr 2fr;
+}
+
+div {
+    /* em is relative padding -- not a fixed
+        pixel size */
+    /* em is relative to the font size of the
+        current element */
+    /* if the font size is 12px, the padding
+        is 36px */
+    text-align: center;
+    /* padding: 2em; */
+    /* font-size: 12px; */
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.blanched-almond {
+    background-color: blanchedalmond;
+} 

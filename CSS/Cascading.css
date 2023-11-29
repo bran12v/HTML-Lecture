@@ -1,0 +1,114 @@
+/* This is a CSS comment */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../256px-Pikachu_artwork_for_Pokémon_Red_and_Blue.webp.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#container {
+    /* last value is opacity */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* The way to refer to multiple tags at once is through commas */
+p, h1, h2, h3, table {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+h2, h3 {
+    color: hotpink;
+}
+
+h1, a {
+    text-decoration: none;
+}
+
+/* Class is a reusable CSS attribute that you can apply to multiple elements */
+.news {
+    font-size: 12px;
+    font-style: italic;
+    color: cadetblue;
+}
+
+/* ID selector, it is a unique styling that gets applied to only a single element */
+#history {
+    text-decoration: line-through;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+
+/* Pseudo-selector, apply upon event */
+a:visited {
+    color: rgb(300, 25, 180);
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+header {
+    background-color: lightgray;
+    height: 50px;
+}
+
+footer {
+    background-color: lightgray;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.sidebar {
+    width: 210px;
+    background-color: aqua;
+    color: white;
+    float: right;
+    /* margin contains multiple values */
+    /* top right bottom left */
+    margin: 0px 24px 12px 12px;
+}
+
+/* apply styling to specific HTML tags within other tags */
+body main aside h3 {
+    color: black;
+}
+
+table {
+    border: solid black 1px;
+    background-color: blanchedalmond;
+    margin: 0px 24px 12px 12px;
+    float: right;
+    border-collapse: collapse;
+}
+
+td, tr, th{
+    border: solid black 1px;
+    background-color: blanchedalmond;
+    padding: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* tr.gray {
+    color: gray;
+} */
+
+/* Applying styling to specific subtags and elements */
+tbody > tr:nth-child(odd) {
+    color: red;
+}
+
+tbody > tr:nth-child(even) {
+    color: gray;
+}
+
+ul > li {
+    text-decoration: underline;
+}
